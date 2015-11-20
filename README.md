@@ -1,6 +1,6 @@
 # Yelp Category Galaxy
 
-This project uses data from the Yelp challenge (http://www.yelp.com/dataset_challenge) in order to aggregate and visualize information about the categories of businesses on Yelp and their attributes, such as:
+This project uses data from the Yelp challenge (http://www.yelp.com/dataset_challenge) to aggregate and visualize the categories of businesses on Yelp and their attributes, such as:
 
 * category size
 * average review rating
@@ -12,4 +12,3 @@ we first clean and process the data to create a dataframe of business categories
 See the visualization and the datatable on www.tsuprun.com.
 
 Code by Eugene Tsuprun
-
