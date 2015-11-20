@@ -1,11 +1,13 @@
-# Yelp Categories and Visualization
+# Yelp Category Galaxy
 
-The Yelp challenge dataset (http://www.yelp.com/dataset_challenge) includes data on Yelp reviews, businesses, checkins, users, and tips. It doesn't, however, provide information on business categories and their relationships.
+This project uses the data from the Yelp challenge (http://www.yelp.com/dataset_challenge) in order to aggregate and visualize information about the categories of businesses on Yelp and their attributes, such as:
 
-This project completes the following objectives:
+* category size
+* average review rating
+* relationship to other categories
+* coolness, funniness, and usefulness of reviews
 
-* Proccess the reviews JSON to aggregate star ratings, cool/useful/funny votes, and category associations.
-* Visualize categories using the ndtv-d3 framework.
+we first clean and process the data to create a dataframe of business categories and category associations (`process_data.R`). We then visualize the categories using the ndtv-d3 framework (`visualize_categories.R`).
 
 See the visualization and the datatable on www.tsuprun.com
 
