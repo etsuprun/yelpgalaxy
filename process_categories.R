@@ -105,19 +105,19 @@ categories$stars.5.percent <- (categories$stars.5 / categories$review.count * 10
 # Sum up review attributes
 
 categories$review.votes.funny <- sapply(categories$category, function (x) {
-  reviews.long$votes.funny[reviews.long$category==x] %>% as.numeric %>% sum
+  reviews.long$votes.funny[reviews.long$category==x] %>% as.character %>% as.numeric %>% sum
 })
 
 categories$review.votes.funny.ratio <- categories$review.votes.funny / categories$review.count
 
 categories$review.votes.useful <- sapply(categories$category, function (x) {
-  reviews.long$votes.useful[reviews.long$category==x] %>% as.numeric %>% sum
+  reviews.long$votes.useful[reviews.long$category==x] %>% as.character %>% as.numeric %>% sum
 })
 
 categories$review.votes.useful.ratio <- categories$review.votes.useful / categories$review.count
 
 categories$review.votes.cool <- sapply(categories$category, function (x) {
-  reviews.long$votes.cool[reviews.long$category==x] %>% as.numeric %>% sum
+  reviews.long$votes.cool[reviews.long$category==x] %>% as.character %>% as.numeric %>% sum
 })
 
 categories$review.votes.cool.ratio <- categories$review.votes.cool / categories$review.count
